@@ -17,15 +17,14 @@ def add_contacts():
 
 def start_menu():
     print("Phone Book:\n1. Add contact\n2. Look up contact\n3. Delete contact\n4. Exit")
-    int(input("Enter your choice: "))
-
-contact_dict = {}
-x = 0
+    
 start_menu()
+x = int(input("Enter your choice: "))
+contact_dict = {}
+
 match x:
     case 1:
         add_contacts()
-        start_menu()
 #     case 2:
 
 #     case 3:
